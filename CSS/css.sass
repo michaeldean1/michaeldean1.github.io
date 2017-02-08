@@ -1,0 +1,102 @@
+/* Sass Document */
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Raleway:700|Ranga')
+$cursiveheading: Cinzel Decorative
+$text: Raleway
+$heading: Ranga
+$purple: #b452ff
+
+//Elements
+body 
+	font-family: 		$text
+	background-image: 	url(../Images/green_cup.png)
+	font-style: 		normal
+	height: 			100%
+	width: 				100%
+	overflow-x: 		hidden
+
+header
+	height: 100px
+
+main, .main, .offer
+	margin-top: 	-110px
+	margin-left: 	10px
+	margin-right: 	10px
+	text-align: 	justify
+
+blockquote
+	text-align: center
+
+footer
+	text-align: 		center
+	color: 				white
+	background-color: 	darken(white, 50%)
+	width: 				100%
+
+h1, h2, h3, h4, h5, h6
+	font-family: 	$heading
+	text-align: 	center
+
+a
+	text-decoration: 	none
+	color: 				black
+	-webkit-transition: color 1s
+	transition: 		color 1s
+//Classes
+.container 
+	background-color: 	white
+	margin: 			0px 25px 10px 10px
+	height: 			100%
+	width: 				97%
+
+.logo
+	text-align: 	center
+	font-family: 	$cursiveheading
+	font-size: 		100px
+	width: 			100%
+	margin-top: 	10px
+	span
+		color: 		$purple
+
+.parallax
+	width: 					99%
+	margin-left: 			8px
+	background-image: 		url(../Images/lake.jpg)
+	height: 				30vh
+	background-attachment: 	fixed
+	background-position: 	center
+	background-repeat: 		no-repeat
+	background-size: 		cover
+
+.slogan
+	margin-top: 120px
+
+.offer
+	margin-top: 7vh
+
+.column-container
+	display: 			flex
+	margin-left: 		8px
+	justify-content: 	space-around
+	flex-wrap: 			wrap
+
+.contactme
+	border: 			5px outset $purple
+	padding: 			2px
+	margin-top: 		2px
+	-webkit-transition: background-color 1s
+	transition: 		background-color 1s
+	a:hover
+		color: white
+
+.green-highlight
+	text-shadow: 3px 0px 3px $purple, -3px 0px 3px $purple, 6px 0px 6px $purple, -6px 0px 6px $purple
+
+//Media Queries
+@media screen and (max-width: 654px)
+	.logo
+		font-size: 	10vw
+		margin-top: 1vw
+	header
+		margin-bottom: 	1vw
+		height: 		10vh
