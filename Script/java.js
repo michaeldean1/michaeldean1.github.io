@@ -7,7 +7,7 @@ $(document).ready(function(){
 		var diff = Math.round((then.getTime() - now.getTime())/1000);  //Get the difference between the two times in seconds, there are 1000 milliseconds in a second.
 		if (diff < 0){
 			clearInterval(x);
-			$(".offer").html("This offer has elapsed, but dont worry another one will be here very soon.");			
+			$(".offer").html("There is no offer on at the moment, but dont worry another one will be here very soon.");			
 		}else{
         var days_to_go = Math.floor(diff/(24*60*60));
 		diff = diff - (days_to_go * 24 * 60 * 60); //Remove the correct number of Days
@@ -16,7 +16,7 @@ $(document).ready(function(){
     	var minutes_to_go = Math.floor(diff/60);
 		diff = diff - (minutes_to_go * 60);
     	var seconds_to_go = diff;
-		$(".offer span").html("there are only " + days_to_go + " day(s), " + hours_to_go + " hour(s), " + minutes_to_go + " minute(s), and " + seconds_to_go + " second(s) left for this offer.");
+		$(".offer span").html("There is an offer on where you can get 50% off any order. But there are only " + days_to_go + " day(s), " + hours_to_go + " hour(s), " + minutes_to_go + " minute(s), and " + seconds_to_go + " second(s) left for this offer.");
 		}
     }, 1000);
 	
