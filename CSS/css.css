@@ -82,9 +82,6 @@ a {
   .contactme a:hover {
     color: white; }
 
-.green-highlight {
-  text-shadow: 3px 0px 3px #b452ff, -3px 0px 3px #b452ff, 6px 0px 6px #b452ff, -6px 0px 6px #b452ff; }
-
 @media screen and (max-width: 654px) {
   .logo {
     font-size: 10vw;

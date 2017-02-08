@@ -1,10 +1,8 @@
 // JavaScript Document
 $(document).ready(function(){
 	"use strict";
-	
-	
 	var x = setInterval(function(){
-        var then = new Date("Nov 05, 2017 23:59:59");
+		var then = new Date("Apr 11, 2017 23:59:59");
     	var now = new Date();
 		var diff = Math.round((then.getTime() - now.getTime())/1000);  //Get the difference between the two times in seconds, there are 1000 milliseconds in a second.
 		if (diff < 0){
