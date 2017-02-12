@@ -19,6 +19,8 @@ $(document).ready(function(){
 		$(".offer span").html("There is an offer on where you can get 50% off any order. But there are only " + days_to_go + " day(s), " + hours_to_go + " hour(s), " + minutes_to_go + " minute(s), and " + seconds_to_go + " second(s) left for this offer.");
 		}
     }, 1000);
+	var now = new Date();
+	$(".howlong").html(now.getYear() - 112);
 	
 	$(".contactme").on("mouseover", function(){
 		var styles = {
