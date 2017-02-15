@@ -21,20 +21,4 @@ $(document).ready(function(){
     }, 1000);
 	var now = new Date();
 	$(".howlong").html(now.getYear() - 112);
-	
-	$(".contactme").on("mouseover", function(){
-		var styles = {
-			cursor: "pointer",
-			backgroundColor: "#7400cc"
-		};
-		$(this).css(styles);
-		$(".contactme a").css("color", "white");
-	}).on("mouseleave", function(){
-		var styles = {
-			cursor: "auto",
-			backgroundColor: "white"
-		};
-		$(this).css(styles);
-		$(".contactme a ").css("color", "black");
-	});
 });
