@@ -1,55 +1,92 @@
-/* Sass Document */
-@charset "UTF-8"
-@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Raleway:700|Ranga')
-$cursiveheading: Cinzel Decorative
-$text: Raleway
-$heading: Ranga
-$purple: #b452ff
+@import url('https://fonts.googleapis.com/css?family=Della+Respira|Raleway|Italianno')
+$title: 	Italianno, Arial, Droid Sans, sans-serif
+$headings: 	Della Respira, Droid Serif, Georgia, serif
+$body: 		Raleway, Arial, Droid Sans, sans-serif
+$base: 		1rem
+$mod-scale:	1.618
+$red: 		#70161E
+$blue: 		#0D1F2D
+$white: 	#FFFCE8
+$grey: 		#586F7C
+html, body
+	font-size: $base
+	font-family: $body
+	background-color: $white
+	height: 100%
+	margin: 0
+	padding: 0
+	color: black
 
-body
-	background-image: 		url("../Images/green_cup.png")
-	font-family: 			$text
-	text-align: 			justify
-
-.container
-	background-color: 		white
-	margin-top: 			10px
-	
-.title
-	font-family: 			$cursiveheading
-	text-align: 			center
-	font-size: 				auto
+header
+	background-color: $blue
+	text-align: center
+	color: $white
+	width: 100%
+	margin-top: -53px /*Remove white space above banner*/
 	span
-		color: 				$purple
+		display: inline-block /*Make Data Analyst move onto new line when window is small*/
+	h2
+		color: white
+
+h1
+	font-size: $base * $mod-scale * 3
+	font-family: $title
+	margin-bottom: $base * $mod-scale * -2.5 /*Remove space from lines*/
+
+h2, h3
+	font-family: $headings
+	color: $red
+	text-align: center
+
+h2
+	font-size: $base * $mod-scale * 2
+	margin-bottom: $base * $mod-scale * -0.05
+
+nav
+	display: flex
+	width: 100%
+	height: $base * $mod-scale
+	background-color: $red
+	a
+		margin: auto
+		text-decoration: none
+		font-family: $body
+		color: white
 	
-.subheading
-	text-align: 			center
+main
+	margin: 0 ($base * $mod-scale * 3)
+	min-height: calc(100vh - ($base * $mode-scale * 1.5))
 	
-h1, h2, h3, h4, h5, h6
-	font-family: 			$heading
-	text-align: 			center
-	
-.nav
-	li
-		text-align: 		center
-	
+article
+	margin-bottom: $base * $mod-scale * 3
+	padding: 0 $base
+	&:nth-of-type(1)
+		margin-top: $base * $mod-scale
+
+h3
+	font-size: $base * $mod-scale
+	margin-bottom: $base * $mod-scale * -0.5
+
 footer
-	background-color: 		grey
-	color: 					white
-	text-align: 			center
-	
-hr
-	border: 				none
-	color: 					rgba(180, 82, 255, 0.72)
-	background-color: 		rgba(180, 82, 255, 0.72)
-	height: 				5px
-	
-.question
-	display: 				flex
-	flex-wrap: 				wrap
-	&>[class*="col-"]
-		display: 			flex
-		flex-direction: 	column
-.answer
-	&:nth-child(even)
-		background-color: 	#b8b8b8
+	height: $base * $mod-scale * 2
+	width: 100%
+	background-color: $grey
+	color: $white
+
+@media only screen and (max-width: 430px)
+	h1
+		font-size: $base * $mod-scale * 2
+		margin-top: $base * $mod-scale * 2
+		margin-bottom: $base * $mod-scale * -1.5 /*Remove space from lines*/
+
+	h2, h3
+		font-family: $headings
+		color: $red
+		text-align: center
+
+	h2
+		font-size: $base * $mod-scale * 1.05
+		margin-bottom: $base * $mod-scale * -0.05
+
+	body, a
+		font-size: $base / $mod-scale
