@@ -1,62 +1,107 @@
-/* Sass Document */
-@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative|Raleway:700|Ranga");
-body {
-  background-image: url("../Images/green_cup.png");
-  font-family: Raleway;
-  text-align: justify; }
+@import url("https://fonts.googleapis.com/css?family=Della+Respira|Raleway|Italianno");
+html, body {
+  font-size: 1rem;
+  font-family: Raleway, Arial, Droid Sans, sans-serif;
+  background-color: #FFFCE8;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
 
-.container {
-  background-color: white;
-  margin-top: 10px; }
-
-.title {
-  font-family: Cinzel Decorative;
+header {
+  background-color: #0D1F2D;
   text-align: center;
-  font-size: auto; }
-  .title span {
-    color: #b452ff; }
-
-.subheading {
-  text-align: center; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Ranga;
-  text-align: center; }
-
-.nav li {
-  text-align: center; }
-
-footer {
-  background-color: grey;
+  color: #FFFCE8;
+  width: 100%;
+  margin-top: -53px;
+}
+header span {
+  display: inline-block;
+}
+header h2 {
   color: white;
-  text-align: center; }
+}
 
-hr {
-  border: none;
-  color: rgba(180, 82, 255, 0.72);
-  background-color: rgba(180, 82, 255, 0.72);
-  height: 5px; }
+h1 {
+  font-size: 4.854rem;
+  font-family: Italianno, Arial, Droid Sans, sans-serif;
+  margin-bottom: -4.045rem;
+}
 
-.question {
+h2, h3 {
+  font-family: Della Respira, Droid Serif, Georgia, serif;
+  color: #70161E;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.236rem;
+  margin-bottom: -0.0809rem;
+}
+
+nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-  .question > [class*="col-"] {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+  width: 100%;
+  height: 1.618rem;
+  background-color: #70161E;
+}
+nav a {
+  margin: auto;
+  text-decoration: none;
+  font-family: Raleway, Arial, Droid Sans, sans-serif;
+  color: white;
+}
 
-.answer:nth-child(even) {
-  background-color: #b8b8b8; }
+main {
+  margin: 0 4.854rem;
+  min-height: calc(100vh - ($base * $mode-scale * 1.5));
+}
+
+article {
+  margin-bottom: 4.854rem;
+  padding: 0 1rem;
+}
+article:nth-of-type(1) {
+  margin-top: 1.618rem;
+}
+
+h3 {
+  font-size: 1.618rem;
+  margin-bottom: -0.809rem;
+}
+
+footer {
+  height: 3.236rem;
+  width: 100%;
+  background-color: #586F7C;
+  color: #FFFCE8;
+}
+
+@media only screen and (max-width: 430px) {
+  h1 {
+    font-size: 3.236rem;
+    margin-top: 3.236rem;
+    margin-bottom: -2.427rem;
+  }
+
+  h2, h3 {
+    font-family: Della Respira, Droid Serif, Georgia, serif;
+    color: #70161E;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.6989rem;
+    margin-bottom: -0.0809rem;
+  }
+
+  body, a {
+    font-size: 0.61805rem;
+  }
+}
 
 /*# sourceMappingURL=css.css.map */
