@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Della+Respira|Raleway|Italianno");
 .character {
   color: white;
-  background-color: black; }
+  background-color: black;
+}
 
 html, body {
   font-size: 1rem;
@@ -11,78 +12,184 @@ html, body {
   margin: 0;
   padding: 0;
   color: black;
-  text-align: justify; }
+  text-align: justify;
+}
 
 header {
   background-color: #0D1F2D;
   text-align: center;
   color: #FFFCE8;
   width: 100%;
-  margin-top: -53px; }
-  header span {
-    display: inline-block; }
-  header h2 {
-    color: white; }
+  margin-top: -53px;
+}
+header span {
+  display: inline-block;
+}
+header h2 {
+  color: white;
+}
 
 h1 {
   font-size: 4.854rem;
   font-family: Italianno, Arial, Droid Sans, sans-serif;
-  margin-bottom: -4.045rem; }
+  margin-bottom: -4.045rem;
+}
 
-h2, h3 {
+h2, h3, h4 {
   font-family: Della Respira, Droid Serif, Georgia, serif;
   color: #70161E;
-  text-align: center; }
+  text-align: center;
+}
 
 h2 {
   font-size: 3.236rem;
-  margin-bottom: -0.0809rem; }
+  margin-bottom: -0.0809rem;
+}
 
 nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 1.618rem;
-  background-color: #70161E; }
-  nav a {
-    margin: auto;
-    text-decoration: none;
-    font-family: Raleway, Arial, Droid Sans, sans-serif;
-    color: white; }
+  background-color: #70161E;
+}
+nav a {
+  margin: auto;
+  text-decoration: none;
+  font-family: Raleway, Arial, Droid Sans, sans-serif;
+  color: white;
+}
 
 main {
   margin: 0 4.854rem;
-  min-height: calc(100vh - ($base * $mode-scale * 1.5)); }
+  min-height: calc(100vh - ($base * $mode-scale * 1.5));
+}
 
 article {
   margin-bottom: 4.854rem;
-  padding: 0 1rem; }
-  article:nth-of-type(1) {
-    margin-top: 1.618rem; }
+  padding: 0 1rem;
+}
+article:nth-of-type(1) {
+  margin-top: 1.618rem;
+}
+
+table {
+  width: 90%;
+  margin: 0 1.618rem;
+}
+
+th {
+  font-family: Della Respira, Droid Serif, Georgia, serif;
+  font-size: 100%;
+  color: #70161E;
+  text-align: center;
+}
 
 h3 {
   font-size: 1.618rem;
-  margin-bottom: -0.809rem; }
+  margin-bottom: -0.809rem;
+}
+
+.circle {
+  background-color: #70161E;
+  display: inline-block;
+  white-space: pre;
+  border-radius: 50%;
+  height: 1.618rem;
+  width: 1.618rem;
+}
+
+form {
+  display: table;
+  width: 100%;
+}
+form p {
+  display: table-row;
+}
+form label {
+  display: table-cell;
+}
+form input {
+  display: table-cell;
+  width: 90%;
+  margin: 0 0 0.5rem 0;
+}
+form textarea {
+  width: 90%;
+}
+form .button {
+  width: 90%;
+  background-color: #0D1F2D;
+  color: white;
+  border: 0.25rem solid #0D1F2D;
+  font-family: Raleway, Arial, Droid Sans, sans-serif;
+  border-radius: 0.33333rem;
+}
 
 footer {
   height: 3.236rem;
   width: 100%;
   background-color: #586F7C;
-  color: #FFFCE8; }
+  color: #FFFCE8;
+  text-align: center;
+  display: table;
+  verticle-align: middle;
+}
 
 @media only screen and (max-width: 430px) {
   h1 {
     font-size: 3.236rem;
     margin-top: 3.236rem;
-    margin-bottom: -2.427rem; }
+    margin-bottom: -2.427rem;
+  }
 
   h2, h3 {
     font-family: Della Respira, Droid Serif, Georgia, serif;
     color: #70161E;
-    text-align: center; }
+    text-align: center;
+  }
 
   h2 {
     font-size: 1.6989rem;
-    margin-bottom: -0.0809rem; }
+    margin-bottom: -0.0809rem;
+  }
 
-  body, a {
-    font-size: 0.61805rem; } }
+  main {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+
+  nav {
+    height: 4.5rem;
+  }
+  nav a {
+    font-size: 0.82406rem;
+    padding: 0.5rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  main {
+    margin: 0 12.944rem;
+    font-size: 1.618rem;
+  }
+}
+@media only screen and (min-width: 429px) and (max-width: 629px) {
+  main {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  nav {
+    height: 2rem;
+  }
+}
+@media only screen and (min-width: 630px) and (max-width: 999px) {
+  main {
+    margin: 0 1.618rem;
+    font-size: 1.62rem;
+  }
+}
+
+/*# sourceMappingURL=css.css.map */

@@ -1,10 +1,19 @@
 $(document).ready(function() {
-  return $("p").each(function() {
-    var str;
-    str = $(this).html();
-    if (str.length > 75) {
-      str = str.substring(0, 44) + "<span class='character'>" + str.substring(45, 76) + "</span>" + str.substring(76, str.length);
-    }
-    return $(this).html(str);
-  });
+  var charcount, year;
+  $("#container").hide();
+  $("#container").show(1500);
+  charcount = function() {
+    $("p:not(:has(*))").each(function() {
+      var str;
+      str = $(this).html();
+      if (str.length > 75) {
+        str = str.substring(0, 44) + "<span class='character'>" + str.substring(44, 76) + "</span>" + str.substring(76, str.length);
+      }
+      $(this).html(str);
+    });
+  };
+  year = new Date();
+  year = year.getYear();
+  year = year - 112;
+  return $(".howlong").html(year);
 });

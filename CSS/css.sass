@@ -33,13 +33,12 @@ header
 		display: inline-block /*Make Data Analyst move onto new line when window is small*/
 	h2
 		color: white
-
 h1
 	font-size: $base * $mod-scale * 3
 	font-family: $title
 	margin-bottom: $base * $mod-scale * -2.5 /*Remove space from lines*/
 
-h2, h3
+h2, h3, h4
 	font-family: $headings
 	color: $red
 	text-align: center
@@ -58,41 +57,100 @@ nav
 		text-decoration: none
 		font-family: $body
 		color: white
-	
+
 main
 	margin: 0 ($base * $mod-scale * 3)
 	min-height: calc(100vh - ($base * $mode-scale * 1.5))
-	
+
 article
 	margin-bottom: $base * $mod-scale * 3
 	padding: 0 $base
 	&:nth-of-type(1)
 		margin-top: $base * $mod-scale
 
+table
+	width: 90%
+	margin: 0 ($base * $mod-scale)
+
+th
+	font-family: $headings
+	font-size: 100%
+	color: $red
+	text-align: center
+
 h3
 	font-size: $base * $mod-scale
 	margin-bottom: $base * $mod-scale * -0.5
+
+.circle
+	background-color: $red
+	display: inline-block
+	white-space: pre
+	border-radius: 50%
+	height: $base * $mod-scale
+	width: $base * $mod-scale
+
+form
+	display: table
+	width: 100%
+	p
+		display: table-row
+	label
+		display: table-cell
+	input
+		display: table-cell
+		width: 90%
+		margin: 0 0 ($base/2) 0
+	textarea
+		width: 90%
+	.button
+		width: 90%
+		background-color: $blue
+		color: white
+		border: $base/4 solid $blue
+		font-family: $body
+		border-radius: $base/3
 
 footer
 	height: $base * $mod-scale * 2
 	width: 100%
 	background-color: $grey
 	color: $white
+	text-align: center
+	display: table
+	verticle-align: middle
 
-@media only screen and (max-width: 430px)
+@media only screen and (max-width: 430px) /*Anything less than or equal to 430px in width*/
 	h1
 		font-size: $base * $mod-scale * 2
 		margin-top: $base * $mod-scale * 2
 		margin-bottom: $base * $mod-scale * -1.5 /*Remove space from lines*/
-
 	h2, h3
 		font-family: $headings
 		color: $red
 		text-align: center
-
 	h2
 		font-size: $base * $mod-scale * 1.05
 		margin-bottom: $base * $mod-scale * -0.05
-
-	body, a
-		font-size: $base / $mod-scale
+	main
+		font-size: $base
+		margin: 0 $base
+	nav
+		height: $base * 4.5
+		a
+			font-size: ($base * 4) / ($mod-scale * 3)
+			padding: $base/2
+@media only screen and (min-width: 1000px) /*Anything greater than or equal to 1000px in width*/
+	main
+		margin: 0 ($base * $mod-scale * 8)
+		font-size: $base * $mod-scale
+@media only screen and (min-width: 429px) and (max-width: 629px) /* >=429px & <=629px*/
+	main
+		margin: 0 
+		font-size: $base
+	nav
+		height: $base * 2
+@media only screen and (min-width: 630px) and (max-width: 999px) /*>=630px & <=999px*/
+	main
+		margin: 0 ($base * $mod-scale)
+		font-size: $base * 1.62
