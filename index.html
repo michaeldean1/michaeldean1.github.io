@@ -19,6 +19,9 @@
 	  ga('create', 'UA-91905404-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
+	<script src="Javascript/angular.min.js"></script>
+	<script src="Javascript/java.js"></script>
+	<script src="Javascript/app.js"></script>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -41,29 +44,33 @@
 		<main>
 			<article id="about">
 				<h3>About</h3>
-				<p>With over <span class="howlong"></span> years of experience you can be assured that the service I provide will be delivered reliably and with the highest level of care.
-				</p>
+				<p>Looking for a website that meets your needs? With over <span class="howlong"></span> years of experience in the field, I am confident web developer, proficient in many languages and data analysis.</p>
+				<br>
+				<p>Once an initial consultation has been completed, the next six stages of development will be to create the website suitable for your business. Whilst the development is under way, you the client, will be given full control, ensuring the final product is one you will be proud of.</p>
 			</article>
 			<article id="web">
 				<h3>Web Development</h3>
-				<p>There are seven stages of development. At each of them you will be given full control over each decision, ensuring that the final product is one that you can be proud of.</p>
+				<p>There are six stages of development. At each of them you will be given full control over each decision, ensuring that the final product is one that you can be proud of.</p>
 				<table ng-controller="DevController">
-					<tr>
-						<th colspan="2">{{stage.name}}</th>		
+					<tr ng-repeat-start="y in stage">
+						<th colspan="2">{{y.name}}</th>		
 					</tr>
-					<tr>
-						<td><img ng-src={{stage.img}}></td>
-						<td>{{stage.desc}}</td>
+					<tr ng-repeat-end>
+						<td ng-if="$even"><img ng-src={{y.img}}></td>
+						<td ng-if="$even">{{y.desc}}</td>							
+						<td ng-if="$odd">{{y.desc}}</td>
+						<td ng-if="$odd"><img ng-src={{y.img}}></td>
 					</tr>
 				</table>
 				<h4>Languages</h4>
 				<p>Below are the languages that I am proficient in, including the number of years experince I have in each.</p>
-				<table ng-controller="langController" >
+				<table ng-controller="langController">
 					<tr>
 						<th>Language</th><th>Experience (years)</th>
 					</tr>
 					<tr ng-repeat="x in language" id="lang">
-						<td>{{x.name}}</td><td>{{x.years}}</td>
+						<td ng-if="$even">{{x.name}}</td><td ng-if="$even">{{x.years}}</td>
+						<td ng-if="$odd" class="rowcolour">{{x.name}}</td><td ng-if="$odd" class="rowcolour">{{x.years}}</td>
 					</tr>
 				</table>
 			</article>
@@ -90,11 +97,9 @@
 			</article>
 			<footer>
 				<p>&copy; Michael Dean 2017</p>
+				<p>Content created by Natasha Caines</p>
 			</footer>
 		</main>
 	</div>
-<script src="Javascript/angular.min.js"></script>
-<script src="Javascript/java.js"></script>
-<script src="Javascript/app.js"></script>
 </body>
 </html>

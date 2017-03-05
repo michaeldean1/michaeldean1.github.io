@@ -1,7 +1,5 @@
 $(document).ready(function() {
   var charcount, year;
-  $("#container").hide();
-  $("#container").show(1500);
   charcount = function() {
     $("p:not(:has(*))").each(function() {
       var str;

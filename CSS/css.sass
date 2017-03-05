@@ -60,7 +60,7 @@ nav
 
 main
 	margin: 0 ($base * $mod-scale * 3)
-	min-height: calc(100vh - ($base * $mode-scale * 1.5))
+	min-height: calc(100vh - ($base * $mod-scale * 1.5))
 
 article
 	margin-bottom: $base * $mod-scale * 3
@@ -71,6 +71,7 @@ article
 table
 	width: 90%
 	margin: 0 ($base * $mod-scale)
+	border-collapse: collapse
 
 th
 	font-family: $headings
@@ -82,13 +83,14 @@ h3
 	font-size: $base * $mod-scale
 	margin-bottom: $base * $mod-scale * -0.5
 
-.circle
-	background-color: $red
-	display: inline-block
-	white-space: pre
-	border-radius: 50%
-	height: $base * $mod-scale
-	width: $base * $mod-scale
+#lang
+	td:nth-of-type(2)
+		text-align: center
+
+	.rowcolour
+		background-color: darken($white, 25%)
+img
+	max-width: 100%
 
 form
 	display: table

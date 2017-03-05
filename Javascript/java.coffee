@@ -1,6 +1,4 @@
 $(document).ready ->
-	$("#container").hide()
-	$("#container").show(1500)
 	charcount = ->
 		$("p:not(:has(*))").each ->
 			str = $(@).html()

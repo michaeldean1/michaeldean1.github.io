@@ -64,7 +64,7 @@ nav a {
 
 main {
   margin: 0 4.854rem;
-  min-height: calc(100vh - ($base * $mode-scale * 1.5));
+  min-height: calc(100vh - ($base * $mod-scale * 1.5));
 }
 
 article {
@@ -78,6 +78,7 @@ article:nth-of-type(1) {
 table {
   width: 90%;
   margin: 0 1.618rem;
+  border-collapse: collapse;
 }
 
 th {
@@ -92,13 +93,15 @@ h3 {
   margin-bottom: -0.809rem;
 }
 
-.circle {
-  background-color: #70161E;
-  display: inline-block;
-  white-space: pre;
-  border-radius: 50%;
-  height: 1.618rem;
-  width: 1.618rem;
+#lang td:nth-of-type(2) {
+  text-align: center;
+}
+#lang .rowcolour {
+  background-color: #ffeb69;
+}
+
+img {
+  max-width: 100%;
 }
 
 form {
