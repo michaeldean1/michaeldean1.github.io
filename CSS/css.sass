@@ -31,8 +31,16 @@ header
 	margin-top: -53px /*Remove white space above banner*/
 	span
 		display: inline-block /*Make Data Analyst move onto new line when window is small*/
+
+	h1
+		margin-top: -$base
 	h2
 		color: white
+
+	img
+		margin-top: $base * $mod-scale * 1.5
+		height: $base * $mod-scale * 8
+		width: $base * $mod-scale * 8
 h1
 	font-size: $base * $mod-scale * 3
 	font-family: $title
@@ -126,6 +134,11 @@ footer
 		text-decoration: none
 		color: $red
 
+
+
+
+
+
 @media only screen and (max-width: 430px) /*Anything less than or equal to 430px in width*/
 	h1
 		font-size: $base * $mod-scale * 2
@@ -146,16 +159,28 @@ footer
 		a
 			font-size: ($base * 4) / ($mod-scale * 3)
 			padding: $base/2
+
+
+
+
+
 @media only screen and (min-width: 1000px) /*Anything greater than or equal to 1000px in width*/
 	main
 		margin: 0 ($base * $mod-scale * 8)
 		font-size: $base * $mod-scale
+
+
+
+
 @media only screen and (min-width: 429px) and (max-width: 629px) /* >=429px & <=629px*/
 	main
 		margin: 0 
 		font-size: $base
 	nav
 		height: $base * 2
+
+
+
 @media only screen and (min-width: 630px) and (max-width: 999px) /*>=630px & <=999px*/
 	main
 		margin: 0 ($base * $mod-scale)

@@ -28,7 +28,7 @@ app = angular.module 'app', []
 					},
 					{
 						name: 'Submission',
-						desc: 'The site is sent to you in a manner of your choosing, with payment expected on the first of the month.',
+						desc: 'The site is sent to you in a manner of your choosing.',
 						img: 'Images/letter-min.jpg'
 					}]
 	
