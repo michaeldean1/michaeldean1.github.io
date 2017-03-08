@@ -26,17 +26,19 @@ header span {
   display: inline-block;
 }
 header h1 {
-  margin-top: -1rem;
+  margin-top: 2.8315rem;
 }
 header h2 {
   color: white;
 }
-header img {
+
+#logo {
   margin-top: 2.427rem;
+  margin-left: 0;
   height: 12.944rem;
   width: 12.944rem;
-  position: relative;
   max-width: 100%;
+  float: left;
 }
 
 h1 {
