@@ -35,6 +35,7 @@ header h2 {
 #logo {
   margin-top: 2.427rem;
   margin-left: 0;
+  margin-right: 2.427rem;
   height: 12.944rem;
   width: 12.944rem;
   max-width: 100%;
@@ -103,6 +104,10 @@ th {
 h3 {
   font-size: 1.618rem;
   margin-bottom: -0.809rem;
+}
+
+.dev td:nth-of-type(1) {
+  padding-right: 1.618rem;
 }
 
 #lang td:nth-of-type(2) {

@@ -72,7 +72,7 @@
 					<tr ng-repeat-start="y in stage">
 						<th colspan="2">{{y.name}}</th>		
 					</tr>
-					<tr ng-repeat-end>
+					<tr ng-repeat-end class="dev">
 						<td ng-if="$even"><img ng-src={{y.img}}></td>
 						<td ng-if="$even">{{y.desc}}</td>							
 						<td ng-if="$odd">{{y.desc}}</td>
@@ -103,6 +103,10 @@
 					<li>Dashboard is sent to you</li>
 				</ul>
 				<small>Please be aware that I do <strong>NOT</strong> hold any certificates or qualifications in accountancy or any other financial field, please contact a qualified person to deal with financial matters.</small>
+			</article>
+			<article>
+				<h3>Offers</h3>
+				<p class="offer"></p>
 			</article>
 			<article id="contact">
 				<h3>Contact</h3>
