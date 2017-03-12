@@ -157,9 +157,9 @@ footer {
   display: table;
   verticle-align: middle;
 }
-footer a {
-  text-decoration: none;
-  color: #70161E;
+footer #twitter {
+  height: 2.427rem;
+  width: 2.427rem;
 }
 
 @media only screen and (max-width: 430px) {
