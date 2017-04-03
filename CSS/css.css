@@ -113,7 +113,8 @@ h3 {
 #lang td:nth-of-type(2) {
   text-align: center;
 }
-#lang .rowcolour {
+
+.rowcolour {
   background-color: #ffeb69;
 }
 
@@ -157,7 +158,7 @@ footer {
   display: table;
   verticle-align: middle;
 }
-footer #twitter {
+footer .imglink {
   height: 2.427rem;
   width: 2.427rem;
 }
@@ -189,7 +190,7 @@ footer #twitter {
     height: 4.5rem;
   }
   nav a {
-    font-size: 0.82406rem;
+    font-size: 0.61805rem;
     padding: 0.5rem;
   }
 }

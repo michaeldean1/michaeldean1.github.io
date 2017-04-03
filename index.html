@@ -55,6 +55,7 @@
 				<a href="#about">About</a>
 				<a href="#web">Web Development</a>
 				<a href="#data">Data Analysis</a>
+				<a href="#cert">Certifications</a>
 				<a href="#contact">Contact</a>
 			</nav>	
 		</header>
@@ -81,7 +82,7 @@
 				</table>
 				<h4>Languages</h4>
 				<p>Below are the languages that I am proficient in, including the number of years experience I have in each.</p>
-				<table ng-controller="langController">
+				<table ng-controller="langController as language">
 					<tr>
 						<th>Language</th><th>Experience (years)</th>
 					</tr>
@@ -123,11 +124,25 @@
 						<input type="text" name="_gotcha" style="display:none" />
 					</p>
 					<input type="submit" class="button" value="Send">    				
-				</form> 
+				</form>
+				<p>Alternatively you can phone me on: 07437985553</p>
+			</article>
+			<article id="cert">
+				<h3>Certfications</h3>
+				<p>Below are some of my achievements, listed in date order.</p>
+				<table ng-controller="certController as cert">
+					<tr>
+						<th>Certificate</th><th>Awarded</th>
+					</tr>
+					<tr ng-repeat="x in cert | orderBy : '-year'">
+						<td>{{x.name}}</td><td>{{x.month}}/{{x.year}}</td>					
+					</tr>
+				</table>
 			</article>
 			<footer>
 				<p>&copy; Michael Dean 2017</p>
-				<a href="https://twitter.com/michaeldeanweb"><img src="Images/twitter.jpg" alt="The twitter logo" id="twitter"></a>				
+				<a href="https://twitter.com/michaeldeanweb"><img src="Images/twitter.jpg" alt="The twitter logo" class="imglink"></a>
+				<a href="https://www.linkedin.com/in/mdean15/"><img src="Images/linkedin.png" alt="The LinkedIn logo" class="imglink"></a>			
 			</footer>
 		</main>
 	</div>

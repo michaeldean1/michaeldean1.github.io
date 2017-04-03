@@ -72,3 +72,85 @@ app = angular.module 'app', []
 		name: 	'VBA',
 		years: 	fiveyears - 3
 		}]
+
+.controller 'certController', ($scope)->
+	$scope.certifications = [{
+		name: "Body Language for Leaders",
+		month: 1,
+		year: 2017
+		},
+		{
+		name: "Project Management Fundamentals",
+		month: 1,
+		year: 2017
+		},
+		{
+		name: "Statistics Fundamentls",
+		month: 1,
+		year: 2017
+		},
+		{
+		name: "Creating Interactive Dashboards in Tableau",
+		month: 12,
+		year: 2016
+		},
+		{
+		name: "Tableau 9 Essential Training",
+		month: 12,
+		year: 2016
+		},
+		{
+		name: "Introduction to R",
+		month: 6,
+		year: 2015
+		},
+		{
+		name: "Try R",
+		month: 11,
+		year: 2014
+		},
+		{
+		name: "Shaping up with Angular.js",
+		month: 7,
+		year: 2014
+		},
+		{
+		name: "Assembling Sass part 2",
+		month: 1,
+		year: 2014
+		},
+		{
+		name: "Assembling Sass",
+		month: 1,
+		year: 2014
+		},
+		{
+		name: "CSS-Cross Country",
+		month: 12,
+		year: 2013
+		},
+		{
+		name: "CoffeeScript",
+		month: 12,
+		year: 2013
+		},
+		{
+		name: "Front-end formations",
+		month: 12,
+		year: 2013
+		},
+		{
+		name: "Journey into Mobile",
+		month: 12,
+		year: 2013
+		},
+		{
+		name: "Try jQuery",
+		month: 11,
+		year: 2013
+		},
+		{
+		name: "jQuery: The return flight",
+		month: 11,
+		year: 2013
+		}]
